@@ -10,6 +10,8 @@ import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.co
 import { ConsultaClienteComponent } from './consulta-cliente/consulta-cliente.component';
 import { CrearEntregaComponent } from './crear-entrega/crear-entrega.component';
 import { EditarEntregaComponent } from './editar-entrega/editar-entrega.component';
+import { BarraLateralComponent } from './barra-lateral/barra-lateral.component';
+import { VistaDashboardComponent } from './vista-dashboard/vista-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EditarEntregaComponent } from './editar-entrega/editar-entrega.componen
     BarraNavegacionComponent,
     ConsultaClienteComponent,
     CrearEntregaComponent,
-    EditarEntregaComponent
+    EditarEntregaComponent,
+    BarraLateralComponent,
+    VistaDashboardComponent
   ],
   imports: [
     BrowserModule,

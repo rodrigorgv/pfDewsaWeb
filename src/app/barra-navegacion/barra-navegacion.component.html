@@ -1,34 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">LOGO</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+  </button>
+  <a class="navbar-brand" routerLink="/home">LOGO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Cliente
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Crear Cliente</a>
-          <a class="dropdown-item" href="#">Editar Cliente </a>
-          <a class="dropdown-item" href="#">Consultar Cliente</a>
+          <a class="dropdown-item" routerLink="/cliente/consultarClientes">Consultar Cliente</a>
+          <a class="dropdown-item" routerLink="/cliente/anadirCliente">Crear Cliente</a>
+          <a class="dropdown-item" routerLink="/cliente/editarCliente">Editar Cliente </a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Entrega
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Crear Entrega</a>
-          <a class="dropdown-item" href="#">Editar Entrega </a>
-          <a class="dropdown-item" href="#">Consultar Entrega</a>
+          <a class="dropdown-item" routerLink="/cliente/consultarClientes">Consultar Entrega</a>
+          <a class="dropdown-item" routerLink="/entrega/crearEntrega">Crear Entrega</a>
+          <a class="dropdown-item" routerLink="/entrega/editarEntrega">Editar Entrega </a>
         </div>
       </li>
       <li class="nav-item dropdown">

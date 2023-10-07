@@ -1,0 +1,28 @@
+/* :root{
+  --offcanvas-width: 10;
+  --topNavbar-height: 50px;
+} */
+
+.sidebar-nav{
+  width: 15rem;
+}
+
+@media (min-width: 992px){
+  body{
+    overflow: auto !important;
+  }
+
+  main{
+    margin-left: 15rem;
+  }
+
+  .offcanvas-backdrop::before{
+    display: none;
+  }
+  .sidebar-nav{
+    transform: none;
+    visibility: visible !important;
+    top: 3.5rem;
+    height: calc(100vh - 3.5rem);
+  }
+}
