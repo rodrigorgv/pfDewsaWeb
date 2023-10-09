@@ -3,7 +3,7 @@
     aria-controls="offcanvasExample">
     <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
   </button>
-  <a class="navbar-brand" routerLink="/home">LOGO</a>
+  <a class="navbar-brand" routerLink="/home">MIS VENTAS S.A.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,9 +11,6 @@
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Cliente
@@ -22,6 +19,16 @@
           <a class="dropdown-item" routerLink="/cliente/consultarClientes">Consultar Cliente</a>
           <a class="dropdown-item" routerLink="/cliente/anadirCliente">Crear Cliente</a>
           <a class="dropdown-item" routerLink="/cliente/editarCliente">Editar Cliente </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Venta
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/venta/consultarVentas">Consultar Venta</a>
+          <a class="dropdown-item" routerLink="/venta/crearVenta">Crear Venta</a>
+          <a class="dropdown-item" routerLink="/venta/editarVenta">Editar Venta </a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -35,14 +42,22 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Producto
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" routerLink="/cliente/consultarClientes">Consultar Producto</a>
+          <a class="dropdown-item" routerLink="/producto/crearProducto">Crear Producto</a>
+          <a class="dropdown-item" routerLink="/producto/editarProducto">Editar Producto </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Nota Credito
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/cliente/consultarClientes">Consultar Nota Credito</a>
+          <a class="dropdown-item" routerLink="/notaCredito/CrearNotaCredito">Crear Nota Credito</a>
         </div>
       </li>
     </ul>

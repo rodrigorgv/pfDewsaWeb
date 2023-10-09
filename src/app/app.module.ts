@@ -12,6 +12,13 @@ import { CrearEntregaComponent } from './crear-entrega/crear-entrega.component';
 import { EditarEntregaComponent } from './editar-entrega/editar-entrega.component';
 import { BarraLateralComponent } from './barra-lateral/barra-lateral.component';
 import { VistaDashboardComponent } from './vista-dashboard/vista-dashboard.component';
+import { CrearProductoComponent } from './crear-producto/crear-producto.component';
+import { EditarProductoComponent } from './editar-producto/editar-producto.component';
+import { CrearVentaComponent } from './crear-venta/crear-venta.component';
+import { CrearNotacComponent } from './crear-notac/crear-notac.component';
+import { EditarVentaComponent } from './editar-venta/editar-venta.component';
+import { ConsultaEntregaComponent } from './consulta-entrega/consulta-entrega.component';
+import { HistorialEntregaComponent } from './historial-entrega/historial-entrega.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,14 @@ import { VistaDashboardComponent } from './vista-dashboard/vista-dashboard.compo
     CrearEntregaComponent,
     EditarEntregaComponent,
     BarraLateralComponent,
-    VistaDashboardComponent
+    VistaDashboardComponent,
+    CrearProductoComponent,
+    EditarProductoComponent,
+    CrearVentaComponent,
+    CrearNotacComponent,
+    EditarVentaComponent,
+    ConsultaEntregaComponent,
+    HistorialEntregaComponent
   ],
   imports: [
     BrowserModule,
